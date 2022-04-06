@@ -37,7 +37,7 @@ jobs:
           file: ./dockerfile.v1
           platforms: linux/amd64,linux/arm64,linux/ppc64le
           push: true
-          tags: ${{ steps.prep.output.tags }}
+          tags: c15u/ga-docker-test
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
 
